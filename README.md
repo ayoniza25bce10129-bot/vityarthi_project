@@ -4,9 +4,9 @@ VITyarthi individual project - Password Generator and Strength Evaluator
 import random
 import string
 
-def gen_password(len):
+def gen_password(length):
     chars = string.ascii_letters + string.digits + string.punctuation
-    password = ''.join(random.choice(chars) for _ in range(len))
+    password = ''.join(random.choice(chars) for _ in range(length))
     return password
 
 def check_strength(password):
@@ -46,11 +46,11 @@ while True:
     print("1. Password Generation")
     print("2. Strength Evaluator")
     print("3. Exit")
-    choice = input("Enter the number corresponding to your choice:")
+    choice = input("Enter the number corresponding to your choice: ")
 
     if choice == "1"
         len = input("enter desired number of characters in the password: ")
-        if not len.isdigit() or int(len) < 4:
+        if not length.isdigit() or int(length) < 4:
             print("a password with over 3 characters is recommended")
             continue
         password = gen_password(int(len))
