@@ -24,7 +24,7 @@ def check_strength(password):
         score = score + 1
     else:
         remarks.append("add uppercase letters")
-    if any(c.isdigit() for c in password): # Fixed: changed 'isidgit' to 'isdigit'
+    if any(c.isdigit() for c in password):
         score = score + 1
     else:
         remarks.append("add numbers")
